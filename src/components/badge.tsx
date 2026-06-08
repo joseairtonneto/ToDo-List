@@ -24,8 +24,8 @@ export const badgeTextVariants = cva('', {
   variants: {
     variant: {
       none: '',
-      primary: 'bg-green-dark',
-      secondary: 'bg-pink-dark',
+      primary: 'text-green-dark',
+      secondary: 'text-pink-dark',
     },
   },
   defaultVariants: {

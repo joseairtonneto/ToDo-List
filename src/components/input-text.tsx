@@ -25,7 +25,7 @@ interface InputTextProps
     Omit<React.ComponentProps<'input'>, 'size' | 'disabled'>,
     VariantProps<typeof inputTextVariants> {}
 
-export default function inputText({ size, disabled, className, ...props }: InputTextProps) {
+export default function InputText({ size, disabled, className, ...props }: InputTextProps) {
   return (
     <input
       className={cx(inputTextVariants({ size, disabled, className }), textVariants, className)}

@@ -52,7 +52,7 @@ interface InputCheckboxProps
   loading?: boolean
 }
 
-export default function inputCheckbox({
+export default function InputCheckbox({
   variant,
   size,
   disabled,
