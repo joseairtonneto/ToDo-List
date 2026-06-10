@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router'
+
 import Text from '../components/text'
 
 export default function Footer() {

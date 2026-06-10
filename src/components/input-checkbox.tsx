@@ -1,11 +1,12 @@
 import React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
+
 import Icon from './icon'
 import CheckIcon from '../assets/icons/check.svg?react'
 import Skeleton from './skeleton'
 
 export const inputCheckboxWrapperVariants = cva(
-  'inline-flex items-center justify-center relative group',
+  'inline-flex items-center justify-center cursor-pointer relative group',
 )
 
 export const inputCheckboxVariants = cva(
@@ -62,10 +63,7 @@ export default function InputCheckbox({
 }: InputCheckboxProps) {
   if (loading) {
     return (
-      <Skeleton
-        rounded='sm'
-        className={inputCheckboxVariants({ variant: 'none', size })}
-      />
+      <Skeleton rounded='sm' className={inputCheckboxVariants({ variant: 'none', size })} />
     )
   }
 
